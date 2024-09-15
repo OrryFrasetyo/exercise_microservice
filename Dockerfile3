@@ -1,0 +1,11 @@
+#based image dari ubuntu https://hub.docker.com/_/ubuntu
+FROM nginx:1.27.1
+
+LABEL maintainer="orryfratyo@gmail.com"
+
+#run : dijalankan ketika membuat image
+RUN apt-get update
+
+
+#cmd : dijalankan ketika running container
+CMD [ "echo", "Ini Container nginx" ]
